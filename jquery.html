@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+     <style>
+        #click{
+            background-color: brown;
+            color:black;
+            border: 2px solid blue;
+            padding: 5px;
+        }
+        #head{
+            background-color: blueviolet;
+            color:black;
+            border: 2px solid blue;
+            padding: 5px;
+            display: none;
+        }
+     </style>
+</head>
+
+<body>
+    <div id="click">click</div>
+    <div id="head">hello janaki</div>
+    <script>
+        $(document).ready(function(){
+            // $("#click").click(function(){
+            //     $('#head').slideDown('slow')
+            // })
+            // $('#click').click(function(){
+            //     $("#head").slideUp(2000)
+            // })
+            $("#click").click(function(){
+                $("#head").slideToggle("slow")
+            })
+
+
+        })
+
+    </script>
+    
+</body>
+</html>
